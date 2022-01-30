@@ -14,8 +14,8 @@ for (int i = 0; i < num; i++) {
       if (min > arr[i])
         min = arr[i];
 
-      if (max < arr[i])
-	max = arr[i];
+        if (max < arr[i])
+        max = arr[i];
     
       cout<< "Array element at index " <<i<<": "<<arr[i]<<endl;
 }
@@ -42,7 +42,7 @@ int main() {
     }
 
     for (int i = 0; i < num; i++) {
-      a[i] = rand() % 100 + 1;
+      a[i] = rand() % 1000 + 1;
     }
 return arrayFun(a, num);
 }
