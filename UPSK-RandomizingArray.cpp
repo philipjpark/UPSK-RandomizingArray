@@ -6,12 +6,16 @@ using namespace std;
 int arrayFun(int arr[], int num) {
 
 double avg = 0.0;
-int sum = 0, min = arr[0], max = arr[0];
+int sum = 0;
+int min = arr[0]; 
+int max = arr[0], med;
 
 for (int i = 0; i < num; i++) {
     avg += arr[i];
     sum += arr[i];
-      if (min > arr[i])
+
+    if (num % 2 == 1) 
+    if (min > arr[i])
         min = arr[i];
 
         if (max < arr[i])
@@ -25,6 +29,8 @@ cout<<"This is the sum: "<<sum<<endl;
 cout<<"This is the average: "<<avg<<endl;
 cout<<"This is the maximum number: "<<max<<endl;
 cout<<"This is the minimum number: "<<min<<endl;
+cout<<"This is the median: "<<med<<endl;
+
 
 return 0;
 }
@@ -42,7 +48,7 @@ int main() {
     }
 
     for (int i = 0; i < num; i++) {
-      a[i] = rand() % 1000 + 1;
+      a[i] = rand() % 50 + 1;
     }
 return arrayFun(a, num);
 }
