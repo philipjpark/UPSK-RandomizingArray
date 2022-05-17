@@ -40,7 +40,7 @@ int main() {
     cout<< "How many numbers would you like in your array? ";
     cin>>num;
     srand(time(0));
-    int a[num];
+    int a[10];
 
     while (num <= 0) {
       cout<< "Sorry this is an invalid input. ";
@@ -48,7 +48,9 @@ int main() {
     }
 
     for (int i = 0; i < num; i++) {
-      a[i] = rand() % 50 + 1;
+      a[i] = rand() % 200 + 1;
+      a[i] = rand() % 200 + 1;
+
     }
 return arrayFun(a, num);
 }
